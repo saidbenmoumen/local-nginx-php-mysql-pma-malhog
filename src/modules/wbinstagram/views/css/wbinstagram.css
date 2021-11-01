@@ -1,0 +1,51 @@
+.button-arrow {
+    position: absolute;
+    font-size: 18px;
+    width: 28px;
+    height: 28px;
+    color: #999;
+    background: #fff;
+    font-size: 0;
+    top: 10px;
+    border: 1px solid #999;
+    transition: all 0.4s;
+	text-align: center;
+	padding-top: 3px;
+}
+.button-arrow i{font-size: 22px;}
+.wb-block-instagram-social{/* position: relative; *//*padding:0 30px;*/}
+
+  .wb-block-instagram-social .list_carousel ul li img{width: 100%;}
+.wb-block-instagram-social .cycleElementsContainer
+{
+	overflow: hidden;
+    padding: 0px;
+}
+.wb-block-instagram-social .title .title_block{top: 15px; position: relative; text-align:center;color:#161616;font-size:20px;letter-spacing:1px;font-weight:500;text-transform:capitalize;}
+.wb-block-instagram-social .list_carousel .caroufredsel_wrapper ul li:hover a:after{position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    content: '';
+   }
+   .wb-block-instagram-social .list_carousel .caroufredsel_wrapper ul li a:hover:after{opacity:0;}
+   
+   .wb-block-instagram-social .list_carousel .caroufredsel_wrapper ul li:hover a:before{content:"\f0c1";font-family:'FontAwesome';font-size:15px;color:#fff;background:#333;    padding: 7px 12px;
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 999;
+    top: 40%;
+    left: 45%;opacity:0;    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;}
+	.wb-block-instagram-social .list_carousel .caroufredsel_wrapper ul li a:hover:before{opacity:1}
+#next_instagram.button-arrow.next{right:0px;}
+#prev_instagram.button-arrow.prev{right:30px;}
+@media (max-width: 479px){
+	#next_instagram.button-arrow.next{right:5px;}
+#prev_instagram.button-arrow.prev{right:35px;}
+}

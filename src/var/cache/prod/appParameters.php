@@ -1,0 +1,25 @@
+<?php return array (
+  'parameters' => 
+  array (
+    'database_host' => 'mysql',
+    'database_port' => '',
+    'database_name' => 'di-france',
+    'database_user' => 'root',
+    'database_password' => 'password',
+    'database_prefix' => 'ps_',
+    'database_engine' => 'InnoDB',
+    'mailer_transport' => 'smtp',
+    'mailer_host' => '127.0.0.1',
+    'mailer_user' => NULL,
+    'mailer_password' => NULL,
+    'secret' => '4oRDA3KNKOm4nBcAZMQZvzGYL6CyRMahmitDZdTx9uUFkVRmtnjgAJnmQTTjFLHM',
+    'ps_caching' => 'CacheMemcache',
+    'ps_cache_enable' => false,
+    'ps_creation_date' => '2021-10-26',
+    'locale' => 'fr-FR',
+    'use_debug_toolbar' => true,
+    'cookie_key' => 'CnKARcPiY4tkU2GVpKuPaeXtciKwOUnJGPPLm7LApLafzDm8GmISI4LyatfutMNd',
+    'cookie_iv' => 'riYzgq1SFKBK1Ij7uYxK8wfIXC3ngYjN',
+    'new_cookie_key' => 'def000002b6b8772fd0fee655797ac1fd9fa60c6137b6bde5648fda7ae013722125c9d4f260243a084dd4c7bfadf087578ebdcfb307d606a3d05014d7bfcdef93049a35f',
+  ),
+);
