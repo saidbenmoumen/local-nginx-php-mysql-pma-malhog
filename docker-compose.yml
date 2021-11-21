@@ -9,7 +9,7 @@ services:
       - '80:80'
       - '443:443'
     volumes:
-      - "./nginx/:/etc/nginx/templates/"
+      - "./nginx/:/etc/nginx/templates"
       - ./src:/var/www/html:rw,cached
       - ./certs:/etc/certs
     environment:
@@ -21,8 +21,6 @@ services:
 
   mysql:
     image: mysql:8.0.21
-    cap_add:
-      - SYS_NICE  # CAP_SYS_NICE
     container_name: ${APP_NAME}-mysql
     environment:
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
@@ -30,7 +28,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - ./data/db:/var/lib/mysql:delegated
+      - data_db:/var/lib/mysql
       - ./etc/mysql/my.cnf:/etc/mysql/my.cnf
 
   php:
@@ -66,3 +64,6 @@ services:
     ports:
       - "8025:8025"
       - "1025:1025"
+
+volumes:
+  data_db:
