@@ -1,4 +1,4 @@
-mkcert -install "l.anytech365.com"
+mkcert -install "l.fsp.com"
 
 New-Item -ItemType directory "../certs"
 
